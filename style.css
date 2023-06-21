@@ -1,0 +1,21 @@
+.outer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    overflow: auto;
+    overscroll-behavior-x: contain;
+}
+
+.inner-item {
+
+}
+
+.inner-item img {
+    width: 300px;
+}
