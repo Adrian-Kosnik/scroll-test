@@ -7,15 +7,22 @@
 
 .container {
     display: flex;
-    width: 50%;
+    width: 70%;
     overflow: auto;
     overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
 }
 
-.inner-item {
+/* .container::-webkit-scrollbar { 
+    display: none;
+} */
 
+.card {
+    background-color: lightblue;
+    margin: 10px;
+    scroll-snap-align: center;
 }
 
-.inner-item img {
+.card img {
     width: 300px;
 }
