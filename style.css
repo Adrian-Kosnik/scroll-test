@@ -5,17 +5,57 @@
     height: 100vh;
 }
 
+/* .cheeky-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid limegreen;
+    overflow-x: hidden;
+} */
+
 .container {
     display: flex;
+    margin: 0 200px 0 200px;
     width: 70%;
     overflow: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
 }
 
+.container::-webkit-scrollbar-button:start:increment {
+    width: 20%;
+    display: block;
+    background: transparent;
+}
+
+.container::-webkit-scrollbar-button:end:increment {
+    width: 20%;
+    display: block;
+    background: transparent;
+}
+
 /* .container::-webkit-scrollbar { 
     display: none;
 } */
+
+/* width */
+.container::-webkit-scrollbar {
+    height: 5px;
+    width: 80%;
+  }
+  
+  /* Track */
+.container::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    background-color: lightgray;
+    border-radius: 10px;
+}
+  
+  /* Handle */
+.container::-webkit-scrollbar-thumb {
+    background: rgb(48, 146, 178); 
+    border-radius: 10px;
+  }
 
 .card {
     background-color: lightblue;
